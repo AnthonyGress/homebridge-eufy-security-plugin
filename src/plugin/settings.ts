@@ -6,7 +6,7 @@ export const PLATFORM_NAME = 'EufySecurityUpdated';
 /**
  * This must match the name of your plugin as defined the package.json
  */
-export const PLUGIN_NAME = 'homebridge-eufy-security-update';
+export const PLUGIN_NAME = 'homebridge-eufy-security-updated';
 
 export const STATION_INIT_DELAY = 5 * 1000; // 5 seconds
 export const DEVICE_INIT_DELAY = 7 * 1000; // 7 seconds;

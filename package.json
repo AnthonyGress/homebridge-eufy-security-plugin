@@ -43,11 +43,6 @@
     "security-system",
     "camera"
   ],
-  "homebridge": {
-    "pluginAlias": "EufySecurityUpdated",
-    "pluginType": "platform",
-    "schema": "config.schema.json"
-  },
   "dependencies": {
     "@homebridge/plugin-ui-utils": "^2.0.2",
     "eufy-security-client": "^3.4.0",
