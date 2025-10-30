@@ -101,7 +101,7 @@ web_modules/
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+# dist - REMOVED: We need dist/ for the plugin build output
 
 # Gatsby files
 .cache/
