@@ -1,7 +1,7 @@
 {
-  "displayName": "Homebridge Eufy Security Updated",
   "name": "homebridge-eufy-security-updated",
-  "version": "4.3.11",
+  "displayName": "Homebridge Eufy Security Updated",
+  "version": "4.3.12",
   "description": "Control Eufy Security from homebridge - updated with latest eufy-security-client.",
   "license": "Apache-2.0",
   "repository": {
@@ -103,6 +103,6 @@
       "ban-ts-comment": 0
     }
   },
-  "homepage": "https://github.com/anthonygress/homebridge-eufy-security-plugin/wiki",
+  "homepage": "https://github.com/anthonygress/homebridge-eufy-security-plugin#readme",
   "author": "anthonygress"
 }
