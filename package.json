@@ -15,7 +15,7 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/homebridge-eufy-security/homebridge-eufy-security-plugin/issues"
+    "url": "https://github.com/anthonygress/homebridge-eufy-security-plugin/issues"
   },
   "engines": {
     "node": "20.11.0 || ^22 || ^24",
