@@ -71,7 +71,24 @@ export class LocalLivestreamManager extends EventEmitter {
       this.log.debug('Start new station livestream...');
       if (!this.livestreamIsStarting) { // prevent multiple stream starts from eufy station
         this.livestreamIsStarting = true;
-        this.eufyClient.startStationLivestream(this.serial_number);
+        try {
+          this.eufyClient.startStationLivestream(this.serial_number);
+        } catch (error) {
+          this.livestreamIsStarting = false;
+          if (error instanceof Error) {
+            if (error.name === 'NotSupportedError' || error.message.includes('not implemented or supported')) {
+              this.log.error(`Livestreaming is not supported by this device (${this.camera.device.getName()})`);
+              reject(new Error(`Livestreaming not supported: ${error.message}`));
+            } else {
+              this.log.error(`Failed to start livestream: ${error.message}`);
+              reject(error);
+            }
+          } else {
+            this.log.error(`Failed to start livestream: ${error}`);
+            reject(error);
+          }
+          return;
+        }
       } else {
         this.log.debug('stream is already starting. waiting...');
       }
