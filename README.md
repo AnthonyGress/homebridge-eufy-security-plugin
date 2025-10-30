@@ -3,9 +3,11 @@
 </p>
 <span align="center">
 
-# homebridge-eufy-security
+# homebridge-eufy-security-fork
 
-Homebridge plugin to control certain Eufy Security devices
+Homebridge plugin to control certain Eufy Security devices 
+
+*Updated to latest `eufy-security-client` which adds support for more devices including E30*
 
 [![npm](https://img.shields.io/npm/v/homebridge-eufy-security?color=green)](https://www.npmjs.com/package/homebridge-eufy-security)
 [![verified-by-homebridge](https://badgen.net/badge/homebridge/verified/purple)](https://github.com/homebridge/homebridge/wiki/Verified-Plugins)
